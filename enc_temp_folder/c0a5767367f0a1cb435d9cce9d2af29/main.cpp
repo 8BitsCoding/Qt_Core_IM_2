@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 	test t;
 	t.widget = p;
 	t.useWidget();
+	// 이런식으로 할당하면 메모리 delete를 따로 안해줘도 될까?
 
 	if (p.data()) qInfo() << p.data();
 
